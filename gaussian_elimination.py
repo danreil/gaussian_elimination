@@ -99,36 +99,5 @@ print(solution)
 
 
 
-   
-
-"""
-class ElemOp:
-    #move to bottom, cant figure it out
-    def __init__(self, A, b):
-        self.A = A
-        self.b = b
-        dims = A.shape
-        self.n_rows, self.n_cols = dims[0], dims[1]  # number of rows and columns of A. Instance attributes
-    
-    def swap_rows(self, row1, row2):
-        # swap positions of row1 and row2 in A and b
-        self.A[[row1,row2],:] = self.A[[row2, row1],:]  #use advanced indexing for swapping the rows
-        self.b[row1], self.b[row2] = self.b[row2], self.b[row1]
-    
-    def scalar_mult(self, row, scalar):
-        # multiply a row by the given scalar
-        if scalar == 0:
-            print("Can't multiply by 0")
-            return None
-        self.A[row] = scalar*self.A[row]
-        self.b[row] = scalar*self.b[row]
-
-    def add_to_row(self, row1, row2, scalar):
-        # add a scalar multiple of row 1 to row 2 
-        self.A[row2] = scalar*self.A[row1] + self.A[row2]
-        self.b[row2] = scalar*self.b[row1] + self.b[row2]
-"""
-
-
 
 
